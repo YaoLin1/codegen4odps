@@ -17,7 +17,7 @@ git clone git@github.com:YaoLin1/codegen4odps.git
 mvn clean package -DskipTests=true
 ````
 
-## 修改jdbc配置，目前仅支持mysql
+## 修改odps数据源
 
 ````
 修改配置文件 /codegen4odps/src/main/resources/codegen4odps.properties
