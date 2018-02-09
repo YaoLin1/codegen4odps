@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sparkSqlMap namespace="${tableModel.sqlMapNamespace}">
+
+	<sql id="selectAll">
+		SELECT
+
+		<#list tableModel.columnList as columnModel>
+		${columnModel.columnName} <#if columnModel_has_next>,</#if>
+        </#list>
+
+		FROM global_temp.${tableModel.tableName}
+	</sql>
+
+</sparkSqlMap>
+
+

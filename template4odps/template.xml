@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "yes"?>
+<!--  template的模版定义DTD -->
+<!DOCTYPE list[
+        <!ELEMENT list (templateInfo*)>
+        <!ELEMENT templateInfo (companyName,projectName,templateName,templateType,outputSubDir,isNeedDirPerFile,dirNameTypePerFile,outputFileExt,outputFilePrefix,outputFileSuffix,outputFileNameType,encoding)>
+        <!ELEMENT companyName (#PCDATA)>
+        <!ELEMENT projectName (#PCDATA)>
+        <!ELEMENT templateName (#PCDATA)>
+        <!ELEMENT templateType (#PCDATA)>
+        <!ELEMENT outputSubDir (#PCDATA)>
+        <!ELEMENT isNeedDirPerFile (#PCDATA)>
+        <!ELEMENT dirNameTypePerFile (#PCDATA)>
+        <!ELEMENT outputFileExt (#PCDATA)>
+        <!ELEMENT outputFilePrefix (#PCDATA)>
+        <!ELEMENT outputFileSuffix (#PCDATA)>
+        <!ELEMENT outputFileNameType (#PCDATA)>
+        <!ELEMENT encoding (#PCDATA)>
+   ]>
+<list>
+
+	<!-- Domain类模版 -->
+	<templateInfo>
+		<companyName>jkys</companyName>
+		<projectName>bi</projectName>
+		<templateName>DomainTemplate.java</templateName>
+		<templateType>table</templateType>
+		<outputSubDir>domain</outputSubDir>
+		<isNeedDirPerFile>false</isNeedDirPerFile>
+		<dirNameTypePerFile>camel</dirNameTypePerFile>
+		<outputFileExt>java</outputFileExt>
+		<modulePrefix>true</modulePrefix>
+		<outputFilePrefix></outputFilePrefix>
+		<outputFileSuffix></outputFileSuffix>
+		<outputFileNameType>pascal</outputFileNameType>
+		<encoding>UTF-8</encoding>
+	</templateInfo>
+
+	<!-- ibatis的sql语句模版 -->
+	<templateInfo>
+		<companyName>jkys</companyName>
+		<projectName>bi</projectName>
+		<templateName>SqlMapTemplate.xml</templateName>
+		<templateType>table</templateType>
+		<outputSubDir>sqlmap</outputSubDir>
+		<isNeedDirPerFile>true</isNeedDirPerFile>
+		<dirNameTypePerFile>shortlower</dirNameTypePerFile>
+		<outputFileExt>xml</outputFileExt>
+		<outputFilePrefix></outputFilePrefix>
+		<modulePrefix>true</modulePrefix>
+		<outputFileSuffix>_sparkSqlMap</outputFileSuffix>
+		<outputFileNameType>upper</outputFileNameType>
+		<encoding>UTF-8</encoding>
+	</templateInfo>
+
+
+	<!-- DomainToRecord类模版 -->
+	<templateInfo>
+		<companyName>jkys</companyName>
+		<projectName>bi</projectName>
+		<templateName>Domain2RecordTemplate.java</templateName>
+		<templateType>table</templateType>
+		<outputSubDir>d2r</outputSubDir>
+		<isNeedDirPerFile>false</isNeedDirPerFile>
+		<dirNameTypePerFile>camel</dirNameTypePerFile>
+		<outputFileExt>java</outputFileExt>
+		<modulePrefix>true</modulePrefix>
+		<outputFilePrefix></outputFilePrefix>
+		<outputFileSuffix>Domain2RecordConveter</outputFileSuffix>
+		<outputFileNameType>pascal</outputFileNameType>
+		<encoding>UTF-8</encoding>
+	</templateInfo>
+
+
+	<!-- DomainToRecord类模版 -->
+	<templateInfo>
+		<companyName>jkys</companyName>
+		<projectName>bi</projectName>
+		<templateName>Record2DomainTemplate.java</templateName>
+		<templateType>table</templateType>
+		<outputSubDir>r2d</outputSubDir>
+		<isNeedDirPerFile>false</isNeedDirPerFile>
+		<dirNameTypePerFile>camel</dirNameTypePerFile>
+		<outputFileExt>java</outputFileExt>
+		<modulePrefix>true</modulePrefix>
+		<outputFilePrefix></outputFilePrefix>
+		<outputFileSuffix>Record2DomainConveter</outputFileSuffix>
+		<outputFileNameType>pascal</outputFileNameType>
+		<encoding>UTF-8</encoding>
+	</templateInfo>
+	
+</list>
